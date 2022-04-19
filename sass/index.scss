@@ -1,0 +1,20 @@
+/*===== GOOGLE FONTS =====*/
+@import url('https://fonts.googleapis.com/css2?family=Urbanist:wght@100;300;500&display=swap');
+/*===== MISCELANEOUS =====*/
+@import "./misc/variables";
+@import "./misc/animations";
+@import "./misc/mixins";
+@import "./misc/normalize";
+/*===== PARTIALS =====*/
+@import "./partials/footer";
+@import "./partials/header";
+/*===== VIEWS =====*/
+@import "./views/contacto";
+@import "./views/home";
+@import "./views/precios";
+@import "./views/productos";
+@import "./views/somos";
+@import "./views/soporte";
+
+
+

@@ -1,0 +1,70 @@
+//colors
+$pink: pink;
+$color_azalea_approx: rgb(241, 189, 198);
+$white: white;
+$gray: gray;
+
+//fonts
+$font_0: Urbanist;
+$font_1: sans-serif;
+
+* {
+	padding: 0;
+	margin: 0;
+	text-decoration: none;
+	list-style: none;
+	//Instead of the line below you could use @include box-sizing($bs)
+	box-sizing: border-box;
+	font-family: $font_0, $font_1;
+}
+body {
+	background-color: $color_azalea_approx;
+	max-width: 1080px;
+	margin: 0 auto;
+	color: $white;
+}
+@media(max-width: 1200px) {
+	body {
+		background-color: $pink;
+	}
+	.hero__main {
+		padding: 2rem;
+	}
+}
+header {
+	background-color: transparent;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	padding: .5rem 2rem;
+}
+.nav__menu {
+	ul {
+		display: flex;
+		align-items: center;
+	}
+	li {
+		margin-right: 1.5rem;
+	}
+	a:hover {
+		color: $gray;
+	}
+}
+.menu__icon {
+	display: none;
+	img {
+		width: 30px;
+		height: 30px;
+		//Instead of the line below you could use @include border-radius($radius, $vertical-radius)
+		border-radius: 2px;
+	}
+}
+#check {
+	display: none;
+}
+.logo__header img {
+	width: 6rem;
+}
+a.nav__link {
+	color: $white;
+}

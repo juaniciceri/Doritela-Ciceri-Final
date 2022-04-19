@@ -1,0 +1,34 @@
+//colors
+$pink: pink;
+$color_azalea_approx: rgb(241, 189, 198);
+$white: white;
+
+//fonts
+$font_0: Urbanist;
+$font_1: sans-serif;
+
+root {
+}
+* {
+	padding: 0;
+	margin: 0;
+	text-decoration: none;
+	list-style: none;
+	//Instead of the line below you could use @include box-sizing($bs)
+	box-sizing: border-box;
+	font-family: $font_0, $font_1;
+}
+body {
+	background-color: $color_azalea_approx;
+	max-width: 1080px;
+	margin: 0 auto;
+	color: $white;
+}
+@media(max-width: 1200px) {
+	body {
+		background-color: $pink;
+	}
+	.hero__main {
+		padding: 2rem;
+	}
+} 
